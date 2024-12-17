@@ -36,13 +36,13 @@
       }],
     "documentTypes": {
       "Actor": {
-        "guardian": { "htmlFields": ["background.biography"] },
-        "enemy": { "htmlFields": ["background.biography"] },
-        "pawn": {}
+        "Guardian": { "htmlFields": ["background.biography"] },
+        "Enemy": { "htmlFields": ["background.biography"] },
+        "Pawn": {}
       },
       "Item": {
-        "weapon": {},
-        "item": {}
+        "Weapon": {},
+        "Item": {}
       }
     },
     "socket": false,
@@ -53,7 +53,7 @@
     },
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "resources.light",
-    "url": "https://your/hosted/system/repo/",
-    "manifest": "https://your/hosted/system/repo/system.json",
-    "download": "https://your/packaged/download/archive.zip"
+    "url": "https://github.com/s4lieri-the-f/destiny1e",
+    "manifest": "https://github.com/s4lieri-the-f/destiny1e/blob/master/system.json",
+    "download": "https://github.com/s4lieri-the-f/destiny1e/packages"
   }
