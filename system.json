@@ -1,0 +1,59 @@
+{
+    "id": "destiny1e",
+    "title": "Destiny 1e",
+    "description": "Custom Destiny tabletop role-play game system",
+    "version": "0.0.1",
+    "compatibility": {
+      "minimum": 12,
+      "verified": 12
+    },
+    "authors": [{
+      "name": "s4lieri",
+      "email": "aprasidze.gera@gmail.com",
+      "discord": "s4l1eri"
+    }],
+    "esmodules": ["destiny1e.mjs"],
+    "styles": ["styles/system-styles.css"],
+    "packs": [{
+      "name": "monsters",
+      "label": "Enemies",
+      "type": "Actor"
+    },
+    {
+      "name": "items",
+      "label": "Loot",
+      "type": "Item"
+    }],
+    "languages": [{
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+        "lang": "ru",
+        "name": "Русский",
+        "path": "lang/ru.json"
+      }],
+    "documentTypes": {
+      "Actor": {
+        "Guardian": { "htmlFields": ["background.biography"] },
+        "Enemy": { "htmlFields": ["background.biography"] },
+        "pawn": {}
+      },
+      "Item": {
+        "Weapon": {},
+        "Item": {}
+      }
+    },
+    "socket": false,
+    "initiative": "1d20",
+    "grid": {
+      "distance": 10,
+      "units": "ft"
+    },
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "resources.light",
+    "url": "https://your/hosted/system/repo/",
+    "manifest": "https://your/hosted/system/repo/system.json",
+    "download": "https://your/packaged/download/archive.zip"
+  }

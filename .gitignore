@@ -1,0 +1,6 @@
+/packs/*/*.log
+/packs/*/CURRENT
+/packs/*/LOG
+/packs/*/LOCK
+/packs/*/LOG.old
+/packs/*/MANIFEST-*
