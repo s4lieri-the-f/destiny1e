@@ -13,7 +13,7 @@
       "discord": "s4l1eri"
     }],
     "esmodules": ["destiny1e.mjs"],
-    "styles": ["styles/system-styles.css"],
+    "styles": ["styles/d1e.css"],
     "packs": [{
       "name": "monsters",
       "label": "Enemies",
