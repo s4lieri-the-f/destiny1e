@@ -36,13 +36,13 @@
       }],
     "documentTypes": {
       "Actor": {
-        "Guardian": { "htmlFields": ["background.biography"] },
-        "Enemy": { "htmlFields": ["background.biography"] },
+        "guardian": { "htmlFields": ["background.biography"] },
+        "enemy": { "htmlFields": ["background.biography"] },
         "pawn": {}
       },
       "Item": {
-        "Weapon": {},
-        "Item": {}
+        "weapon": {},
+        "item": {}
       }
     },
     "socket": false,
