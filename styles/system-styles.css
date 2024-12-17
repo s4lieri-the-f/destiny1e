@@ -1,0 +1,262 @@
+/* Text Fonts */
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBook.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBookOblique.otf');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBoldOblique.otf');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBook.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBookOblique.otf');
+    font-weight: normal;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBold.otf');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBoldOblique.otf');
+    font-weight: bold;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondExtraBoldOblique.otf');
+    font-weight: 800;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondMedium.otf');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondMediumOblique.otf');
+    font-weight: 500;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTDemi.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTDemiOblique.otf');
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTExtraBoldOblique.otf');
+    font-weight: 800;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTHeavy.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTDemiHeavy.otf');
+    font-weight: 900;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTLight.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTLightOblique.otf');
+    font-weight: 300;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTMedium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTMediumOblique.otf');
+    font-weight: 500;
+    font-style: oblique;
+}
+
+/* Symbol Fonts */
+@font-face {
+    font-family: "Destiny Symbols Common";
+    src: url('fonts/destiny_symbols_common.otf');
+}
+
+/* Body Styles */
+body {
+    font-family: 'Futura';
+}
+
+/* Item Card Styles */
+.item-card {
+    background: linear-gradient(135deg, #4b4b4b, #2c2c2c);
+    border: 2px solid #f0c674;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Item Title Styles */
+.item-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0c674;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Item Type Styles */
+.item-type {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Item Description Styles */
+.item-description {
+    font-size: 14px;
+    color: #d7d7d7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Item Stats Styles */
+.item-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Stat Item Styles */
+.stat-item {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Rarity Indicator Styles */
+.rarity {
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.common {
+    background-color: #7f7f7f;
+    color: #ffffff;
+}
+
+.uncommon {
+    background-color: #1eff00;
+    color: #000000;
+}
+
+.rare {
+    background-color: #0070dd;
+    color: #ffffff;
+}
+
+.epic {
+    background-color: #a335ee;
+    color: #ffffff;
+}
+
+.legendary {
+    background-color: #ff8000;
+    color: #ffffff;
+}
+
+.exotic {
+    background-color: #ffcc00;
+    color: #000000;
+}

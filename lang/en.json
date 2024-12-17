@@ -1,0 +1,10 @@
+{
+    "d1e":{
+        "item":{
+            "weapon": {
+                "impact": "Impact"
+            },
+            "rarity": "Rarity"
+        }
+    }
+}

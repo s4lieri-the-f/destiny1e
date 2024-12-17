@@ -84,8 +84,7 @@ class ItemDataModel extends foundry.abstract.TypeDataModel {
                 blank: false,
                 options: ["kinetic", "energy", "heavy", "head", "chest", "legs", "arms", "class", "inventory"],
                 initial: "inventory"
-            }),
-            type: new StringField({})
+            })
         };
     }
 }

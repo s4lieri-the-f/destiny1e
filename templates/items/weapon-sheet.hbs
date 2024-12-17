@@ -1,9 +1,18 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+        {{item.price}}
     </header>
+    
     <div>
-        <h1>{{item.rarity}}</h1>
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
     </div>
+    <table>
+        <tr>
+            <th>{{localize "d1e.item.weapon.impact"}}</th>
+        </tr>
+        <td>
+            <input name="impact" type="text" value="{{item.system.impact}}" data-dtype="Number">
+        </td>
+    </table>
 </form>

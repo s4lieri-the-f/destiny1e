@@ -41,7 +41,19 @@
         "Pawn": {}
       },
       "Item": {
-        "Weapon": {},
+        "Weapon": {
+          "light": 1900,
+          "impact": 0,
+          "range": 0,
+          "handling": 0,
+          "aim": 0,
+          "recoil": 0,
+          "rpm": 0,
+          "magazine": 0,
+          "size": 0,
+          "zoom": 0,
+          "airborne": 0
+        },
         "Item": {}
       }
     },
