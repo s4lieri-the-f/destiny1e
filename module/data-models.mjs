@@ -75,7 +75,7 @@ class ItemDataModel extends foundry.abstract.TypeDataModel {
             type: new StringField({
                 requered: true,
                 blank: false,
-                options: ["HANDGUN", "GRENADE LAUNCHER", "AUTO RIFLE"]
+                options: ["HANDGUN", "GRENADELAUNCHER", "AUTORIFLE", "SHOTGUN"]
             }),
             rarity: new StringField({
                 required: true,

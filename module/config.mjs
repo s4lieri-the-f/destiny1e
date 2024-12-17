@@ -11,5 +11,6 @@ d1e.rarityOptions = {
 d1e.weaponTypes = {
     HANDGUN: "HANDGUN",
     GRENADELAUNCHER: "GRENADE LAUNCHER",
-    AUTORIFLE: "AUTO RIFLE"
+    AUTORIFLE: "AUTO RIFLE",
+    SHOTGUN: "SHOTGUN"
 }

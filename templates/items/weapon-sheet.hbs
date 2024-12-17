@@ -5,13 +5,9 @@
         <div class="header-text">
             <h1 class="header-text"><input class="name" name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
             <h3 class="header-text">
-                <select name="system.type">
-                    {{#select system.type}}
-                        {{#each config.weaponTypes as |name type|}}
-                            <option value="{{type}}">{{name}}</option>
-                        {{/each}}
-                    {{/select}}
-                </select>GRENADE LAUNCHER
+                <select name="system.type" class="weapon-type">
+                    {{selectOptions config.weaponTypes selected=item.system.type}}
+                </select>
             </h3>
         </div>
     </div>
