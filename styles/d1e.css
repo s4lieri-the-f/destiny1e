@@ -1,3 +1,172 @@
+/* Text Fonts */
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBook.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBookOblique.otf');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTBoldOblique.otf');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBook.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBookOblique.otf');
+    font-weight: normal;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBold.otf');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondBoldOblique.otf');
+    font-weight: bold;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondExtraBoldOblique.otf');
+    font-weight: 800;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondMedium.otf');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTCondMediumOblique.otf');
+    font-weight: 500;
+    font-style: oblique;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTDemi.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTDemiOblique.otf');
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTExtraBoldOblique.otf');
+    font-weight: 800;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTHeavy.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTDemiHeavy.otf');
+    font-weight: 900;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTLight.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTLightOblique.otf');
+    font-weight: 300;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTMedium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FuturaPTMediumOblique.otf');
+    font-weight: 500;
+    font-style: oblique;
+}
+
+/* Symbol Fonts */
+@font-face {
+    font-family: "Destiny Symbols Common";
+    src: url('fonts/destiny_symbols_common.otf');
+}
+
 /* General Reset */
 * {
     box-sizing: border-box;
