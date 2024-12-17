@@ -1,11 +1,14 @@
-import D1ItemSheet from "./module/sheets/items/item-sheet.mjs"
-import { HeroDataModel, VillainDataModel, PawnDataModel, WeaponDataModel, SpellDataModel } from "./module/data-models.mjs";
+import D1ItemSheet from "./module/sheets/items/item-sheet.mjs";
+import { RangedWeaponDataModel } from "./module/data-models.mjs";
+import { d1e } from "./module/config.mjs";
 
 Hooks.once("init", function(){
     console.log("Destiny GS 1e | Initialization of Destiny system 1e");
 
+
+    CONFIG.d1e = d1e;
     CONFIG.Item.dataModels = {
-        Weapon: WeaponDataModel
+        Weapon: RangedWeaponDataModel
     };
 
     Items.unregisterSheet("core", ItemSheet);

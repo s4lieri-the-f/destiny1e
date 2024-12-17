@@ -166,6 +166,9 @@
     font-family: "Destiny Symbols Common";
     src: url('fonts/destiny_symbols_common.otf');
 }
+.window-app .sheet {
+    background: url('img/background.jpg') !important;
+}
 
 /* Body Styles */
 body {
@@ -259,4 +262,58 @@ body {
 .exotic {
     background-color: #ffcc00;
     color: #000000;
+}
+
+/* Weapon Item Sheet Header Styles */
+
+.header-container {
+    margin: 3% 0 0 5%;
+    display: flex;
+    top: 20%;
+    left: 20%;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+}
+  
+.weapon-image {
+    width: 82px;
+    height: 82px;
+}
+
+.header-text {
+    margin-left: 10px;
+    line-height: 80%;
+    color: white;
+}
+
+input.name {
+    background: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 7vh;
+    padding: 0 0 0 0;
+    margin-bottom: 0px;
+    border: 0px;
+    color: inherit;
+}
+
+
+input:focus {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0) !important;
+}
+
+h1.header-text {
+    font-size: 4vh;
+    border-bottom: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+h3.header-text {
+    font-weight: 300;
+    font-size: 20px;
+    border-bottom: 0px;
+    margin: 0 0 0 5px;
 }

@@ -1,6 +1,6 @@
 // definitions
 
-const { HTMLField, NumberField, SchemaField, StringField } = foundry.data.fields;
+const { HTMLField, NumberField, SchemaField, StringField, BooleanField } = foundry.data.fields;
 
 
 // data models
@@ -72,6 +72,11 @@ class ItemDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         return {
             name: new StringField({blank: false}),
+            type: new StringField({
+                requered: true,
+                blank: false,
+                options: ["HANDGUN", "GRENADE LAUNCHER", "AUTO RIFLE"]
+            }),
             rarity: new StringField({
                 required: true,
                 blank: false,
@@ -84,7 +89,8 @@ class ItemDataModel extends foundry.abstract.TypeDataModel {
                 blank: false,
                 options: ["kinetic", "energy", "heavy", "head", "chest", "legs", "arms", "class", "inventory"],
                 initial: "inventory"
-            })
+            }),
+            absolute: new BooleanField({initial: false})
         };
     }
 }
@@ -158,11 +164,7 @@ export class RangedWeaponDataModel extends ItemDataModel {
                 options: ["kinetic", "energy", "heavy"],
                 initial: "kinetic"
             }),
-            light: new SchemaField({
-                min: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
-                value: new NumberField({ required: true, integer: true, min: 0, initial: 1900 }),
-                max: new NumberField({ required: true, integer: true, min: 0, initial: 2100 })
-            }),
+            light: new NumberField({ min: 1900, initial: 1900, max: 2100}),
             range: new NumberField({ required: true, integer: true, positive: true, max: 200, initial: 5 }),
             handling: new NumberField({ required: true, integer: true, positive: true, max: 200, initial: 5 }),
             aim: new NumberField({ required: true, integer: true, positive: true, max: 200, initial: 5 }),

@@ -7,3 +7,9 @@ d1e.rarityOptions = {
     legendary: "Legendary", 
     exotic: "Exotic"
 }
+
+d1e.weaponTypes = {
+    HANDGUN: "HANDGUN",
+    GRENADELAUNCHER: "GRENADE LAUNCHER",
+    AUTORIFLE: "AUTO RIFLE"
+}

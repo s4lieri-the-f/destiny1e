@@ -166,23 +166,17 @@
     font-family: "Destiny Symbols Common";
     src: url('fonts/destiny_symbols_common.otf');
 }
-
-/* General Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+section.window-content {
+    background: url('img/background.jpg') !important;
+    background-size: cover !important; 
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    color: white !important;
 }
 
 /* Body Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1c1c1c;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Futura';
 }
 
 /* Item Card Styles */
@@ -237,7 +231,6 @@ body {
 
 /* Rarity Indicator Styles */
 .rarity {
-    position: absolute;
     top: 10px;
     right: 10px;
     padding: 5px 10px;
@@ -271,6 +264,67 @@ body {
 }
 
 .exotic {
-    background-color: #ffcc00;
+    background-color: #f0d052;
+    
     color: #000000;
+}
+
+/* Weapon Item Sheet Header Styles */
+
+.header-container {
+    margin: 3% 0 0 5%;
+    display: flex;
+    top: 20%;
+    left: 20%;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.absolute-border {
+    display: inline-block;
+    overflow: hidden;
+}
+  
+.weapon-image {
+    width: 82px;
+    height: 82px;
+    border-width: 4px;
+}
+
+.header-text {
+    margin-left: 10px;
+    line-height: 80%;
+    color: white;
+}
+
+input.name {
+    background: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 7vh;
+    padding: 0 0 0 0;
+    margin-bottom: 0px;
+    border: 0px;
+    color: inherit;
+}
+
+
+input:focus {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0) !important;
+}
+
+h1.header-text {
+    font-size: 4vh;
+    border-bottom: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+h3.header-text {
+    font-weight: 300;
+    font-size: 20px;
+    border-bottom: 0px;
+    margin: 0 0 0 5px;
 }

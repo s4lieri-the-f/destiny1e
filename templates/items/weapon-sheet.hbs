@@ -1,18 +1,19 @@
-<form class="{{cssClass}}" autocomplete="off">
-    <header class="sheet-header">
-        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-        {{item.price}}
-    </header>
-    
-    <div>
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
+<form autocomplete="off">
+
+    <div class="header-container">
+        <img class="weapon-image" src="{{item.img}}" data-edit="img" title="{{item.name}}" style="{{#if item.system.absolute}}box-shadow: inset 0 0 6px #f0d052;border-color: #f0d052;{{else}}border-color: rgb(255, 255, 255);{{/if}}">
+        <div class="header-text">
+            <h1 class="header-text"><input class="name" name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+            <h3 class="header-text">
+                <select name="system.type">
+                    {{#select system.type}}
+                        {{#each config.weaponTypes as |name type|}}
+                            <option value="{{type}}">{{name}}</option>
+                        {{/each}}
+                    {{/select}}
+                </select>GRENADE LAUNCHER
+            </h3>
+        </div>
     </div>
-    <table>
-        <tr>
-            <th>{{localize "d1e.item.weapon.impact"}}</th>
-        </tr>
-        <td>
-            <input name="impact" type="text" value="{{item.system.impact}}" data-dtype="Number">
-        </td>
-    </table>
+
 </form>
