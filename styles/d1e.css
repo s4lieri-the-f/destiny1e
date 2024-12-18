@@ -171,6 +171,7 @@ section.window-content {
     background-size: cover !important; 
     background-position: center !important;
     background-repeat: no-repeat !important;
+    box-shadow: inset 0 0 10em 1em #000 !important;
     color: white !important;
 }
 
@@ -271,6 +272,11 @@ body {
 
 /* Weapon Item Sheet Header Styles */
 
+.sheet {
+    width: 1920px !important;
+    height: 1080px !important;
+}
+
 .header-container {
     margin: 3% 0 0 5%;
     display: flex;
@@ -281,6 +287,46 @@ body {
     width: fit-content;
 }
 
+.weapon-description {
+    margin: 1% 0 0 5%;
+    left: 20%;
+    font-weight: 300;
+    font-style: oblique;
+}
+
+.item-description {
+    font-family: 'Futura';
+    color: white !important;
+    font-weight: 200;
+    font-size: medium !important;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    border: 0px !important;
+    text-align: left;
+    background: rgba(0, 0, 0, 0) !important;
+    padding: 0 0 0 0;
+    margin-bottom: 0px;
+    color: inherit;
+}
+
+textarea:focus {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.weapon-traits {
+    margin: 3% 0 0 5%;
+    left: 20%;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.weapon-traits-header {
+    border-bottom: 0px white;
+    margin: 0 0 0 0;
+}
+
 .absolute-border {
     display: inline-block;
     overflow: hidden;
@@ -289,7 +335,7 @@ body {
 .weapon-image {
     width: 82px;
     height: 82px;
-    border-width: 4px;
+    border-width: 2px;
 }
 
 .header-text {

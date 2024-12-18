@@ -2,7 +2,7 @@
     "id": "destiny1e",
     "title": "Destiny 1e",
     "description": "Custom Destiny tabletop role-play game system",
-    "version": "0.0.1",
+    "version": "0.0.9",
     "compatibility": {
       "minimum": 12,
       "verified": 12

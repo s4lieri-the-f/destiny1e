@@ -25,6 +25,20 @@ class ActorDataModel extends foundry.abstract.TypeDataModel {
   }
 }
 
+class GhostDataModel extends foundry.abstract.TypeDataModel {
+    static defineSchema() {
+        return {
+            health: new NumberField({
+                requered: true,
+                integer: true,
+                min: 0,
+                max: 100,
+                initial: 100
+            })
+        }
+    }
+}
+
 class ImportantActorDataModel extends ActorDataModel {
   static defineSchema() {
     // Only important Actors have a background
@@ -38,16 +52,15 @@ class ImportantActorDataModel extends ActorDataModel {
 }
 
 export class GuardianDataModel extends ImportantActorDataModel {
-  static defineSchema() {
-    return {
-      ...super.defineSchema(),
-      goodness: new SchemaField({
-        value: new NumberField({ required: true, integer: true, min: 0, initial: 5 }),
-        max: new NumberField({ required: true, integer: true, min: 0, initial: 10 })
-      }),
-      level: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 30 })
-    };
-  }
+    static defineSchema() {
+        return {
+            ...super.defineSchema(),
+            level: new NumberField({ required: true, integer: true, min: 0, initial: 1, max: 11 }),
+            class: new StringField({
+                options: ["Titan", "Hunter", "Warlock"]
+            })
+        };
+    }
 }
 
 export class EnemyDataModel extends ImportantActorDataModel {
@@ -72,22 +85,57 @@ class ItemDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         return {
             name: new StringField({blank: false}),
+            description: new StringField({}),
             type: new StringField({
                 requered: true,
                 blank: false,
-                options: ["HANDGUN", "GRENADELAUNCHER", "AUTORIFLE", "SHOTGUN"]
+                options: [
+                    "AUTORIFLE", 
+                    "COMBATBOW", 
+                    "FUSIONRIFLE", 
+                    "GLAIVE", 
+                    "GRENADELAUNCHER", 
+                    "HANDCANNON",
+                    "SHOTGUN",
+                    "LINEARFUSIONRIFLE", 
+                    "MACHINEGUN", 
+                    "PULSERIFLE", 
+                    "ROCKETLAUNCHER", 
+                    "SCOUTRIFLE", 
+                    "SIDEARM", 
+                    "SNIPERRIFLE", 
+                    "SUBMACHINEGUN",
+                    "SWORD", 
+                    "TRACERIFLE"
+                ]
             }),
             rarity: new StringField({
                 required: true,
                 blank: false,
-                options: ["common", "uncommon", "rare", "legendary", "exotic"],
+                options: [
+                    "common", 
+                    "uncommon", 
+                    "rare", 
+                    "legendary", 
+                    "exotic"
+                ],
                 initial: "common"
             }),
             price: new NumberField({ required: true, integer: true, min: 0, initial: 500 }),
             slot: new StringField({
                 required: true,
                 blank: false,
-                options: ["kinetic", "energy", "heavy", "head", "chest", "legs", "arms", "class", "inventory"],
+                options: [
+                    "kinetic", 
+                    "energy", 
+                    "heavy", 
+                    "head", 
+                    "chest", 
+                    "legs", 
+                    "arms", 
+                    "class", 
+                    "inventory"
+                ],
                 initial: "inventory"
             }),
             absolute: new BooleanField({initial: false})
