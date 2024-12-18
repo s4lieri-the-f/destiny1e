@@ -179,100 +179,9 @@ section.window-content {
 body {
     font-family: 'Futura';
 }
-
-/* Item Card Styles */
-.item-card {
-    background: linear-gradient(135deg, #4b4b4b, #2c2c2c);
-    border: 2px solid #f0c674;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Item Title Styles */
-.item-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #f0c674;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Item Type Styles */
-.item-type {
-    font-size: 18px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* Item Description Styles */
-.item-description {
-    font-size: 14px;
-    color: #d7d7d7;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Item Stats Styles */
-.item-stats {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-/* Stat Item Styles */
-.stat-item {
-    font-size: 14px;
-    color: #ffffff;
-}
-
-/* Rarity Indicator Styles */
-.rarity {
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.common {
-    background-color: #7f7f7f;
-    color: #ffffff;
-}
-
-.uncommon {
-    background-color: #1eff00;
-    color: #000000;
-}
-
-.rare {
-    background-color: #0070dd;
-    color: #ffffff;
-}
-
-.epic {
-    background-color: #a335ee;
-    color: #ffffff;
-}
-
-.legendary {
-    background-color: #ff8000;
-    color: #ffffff;
-}
-
-.exotic {
-    background-color: #f0d052;
-    
-    color: #000000;
-}
-
 /* Weapon Item Sheet Header Styles */
 
-.sheet {
+.sheet.app {
     width: 1920px !important;
     height: 1080px !important;
 }
@@ -392,3 +301,42 @@ h3.header-text {
     border-bottom: 0px;
     margin: 0 0 0 0px;
 }
+
+.perk-flex {
+    border-top: 2px solid white !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-style: normal;
+    background-image: url("img/perks-bg.png");
+    background-repeat: no-repeat;
+    background-clip: initial;
+}
+
+.perk-flexrow {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.perk-container {
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.perk-icon {
+    font-size: 24px;
+    color: white;
+}
+
